@@ -89,8 +89,8 @@ curl --include --request POST http://localhost:3000/sign-up \
   --data '{
     "credentials": {
       "email": "an@example.email",
-      "password": "an example password",
-      "password_confirmation": "an example password"
+      "password": "ben",
+      "password_confirmation": "ben"
     }
   }'
 ```
@@ -123,7 +123,7 @@ curl --include --request POST http://localhost:3000/sign-in \
   --data '{
     "credentials": {
       "email": "an@example.email",
-      "password": "an example password"
+      "password": "ben"
     }
   }'
 ```
@@ -157,7 +157,7 @@ curl --include --request PATCH http://localhost:3000/change-password/$ID \
   --header "Content-Type: application/json" \
   --data '{
     "passwords": {
-      "old": "an example password",
+      "old": "ben",
       "new": "super sekrit"
     }
   }'
@@ -222,7 +222,7 @@ Content-Type: application/json; charset=utf-8
   "users": [
     {
       "id": 2,
-      "email": "another@example.email"
+      "email": "ben@ben.com"
     },
     {
       "id": 1,
@@ -254,7 +254,7 @@ Content-Type: application/json; charset=utf-8
 {
   "user": {
     "id": 2,
-    "email": "another@example.email"
+    "email": "ben@ben.com"
   }
 }
 ```
